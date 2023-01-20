@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2023년 버킷리스트</title>
+    <title>2023 Chaewon's BucketList</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap');
         * {
             font-family: 'Hahmlet', serif;
         }
+        html {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         .title {
             color: white;
-            background-color: tomato;
+            background-color: #2F4641;
             font-size: 24px;
             padding: 4px 14px;
             border-radius: 8px;
@@ -27,37 +33,101 @@
         .msg {
             font-weight: bold;
         }
-
         .bucket {
+            background-size: cover;
+            background-position: center;
+            margin: 8px;
+            position: relative;
+        
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            word-break: keep-all;
             width: 160px;
             height: 160px;
         }
-
         .img1 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-image: url("https://raw.githubusercontent.com/Pchaewon/2023_BucketList/main/001.png");
             background-size: cover;
             background-position: center;
+
         }
 
         .img2 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-image: url("https://raw.githubusercontent.com/Pchaewon/2023_BucketList/main/002.png");
             background-size: cover;
             background-position: center;
+            color: white;
         }
-    </style>
-    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
-</head>
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .done::after {    
+            content: "";
+            width: 70%;
+            height: 70%;
+            background-image: url("https://raw.githubusercontent.com/Pchaewon/2023_BucketList/main/stamp_001.png");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 20%;
+        }
+        .done-t2::after {    
+            content: "";
+            width: 70%;
+            height: 70%;
+            background-image: url("https://raw.githubusercontent.com/Pchaewon/2023_BucketList/main/stamp_002.png");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 20%;
+        }
+        .done-t3::after {    
+            content: "";
+            width: 70%;
+            height: 70%;
+            background-image: url("https://raw.githubusercontent.com/Pchaewon/2023_BucketList/main/stamp_003.png");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 20%;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .msg {
+            margin: -10px 0 30px;
+            color: black;
+        }
+        .hidden {
+            visibility: hidden;
+        }
 
+    </style>
+    
+</head>
+<!--bucket box 옆 done 쓰면 스탬프 붙여짐 -->
 <body class="bg center">
-    <h1 class="title">2023 신년계획</h1>
-    <p class="msg">올해는 꼭 모두 지키자!</p>
+    <h1 class="title">2023 Hello Pchaewon!</h1>
+    <p class="msg">Action is the basic key to all success.<br>- Picasso</p>
     <div class="row flex-row wrap">
-        <div class="bucket img1 center">바디프로필 찍기</div> 
-        <div class="bucket img2 center">바디프로필 찍기</div>
-        <div class="bucket img2 center">바디프로필 찍기</div>
-        <div class="bucket img1 center">바디프로필 찍기</div>
-        <div class="bucket img1 center">바디프로필 찍기</div>
-        <div class="bucket img2 center">바디프로필 찍기</div>
+        <div class="bucket img1 center">인공지능 회사<br>취업하기<br>(in Seoul)</div> 
+        <div class="bucket img2 center">SCI 논문 쓰기</div>
+        <div class="bucket img2 center">데이터 분석<br>마스터하기</div>
+        <div class="bucket img1 center">컴퓨터 비전<br>마스터하기</div>
+        <div class="bucket img1 center">석사 졸업하기</div>
+        <div class="bucket img2 center">오픽 AL 받기</div>
+        <div class="bucket img2 center">이모티콘 출시하기</div>
+        <div class="bucket img1 center">블로그 일간 방문자 100명 달성하기</div>
     </div>
 
 </body>
